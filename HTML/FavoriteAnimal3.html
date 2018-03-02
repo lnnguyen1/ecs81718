@@ -21,25 +21,39 @@
       
     </head>
     
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         
-        <div style="background-color:#A0CFEC;">
-        <div>
-            <nav class="navbar navbar-default" style="background-color: lightblue;">
-                <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Leyna's Website</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="https://lnnguyen1.github.io/ecs81718/HTML/practice1.html">Practice 1</a></li>
-                    <li><a href="https://lnnguyen1.github.io/ecs81718/HTML/table1.html">Table 1</a></li>
-                    <li><a href="https://lnnguyen1.github.io/ecs81718/HTML/FavoriteAnimal.html">Favorite Animal</a></li>
-                </ul>
-                </div>
-            </nav>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" 
+        class="navbar-toggle" 
+        data-toggle="collapse" 
+        data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Leyna's Website</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">For More Information & Title</a></li>
+          <li><a href="#section2">Navigation Bar</a></li>
+          <li><a href="#section3">Mythology</a></li>
+          <li><a href="#section4">Thumbnails</a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
         
-        <div align="center" class="jumbotron" style="background-color:#A0CFEC;">
+        
+        <br>
+        <br>
+        <div id="section1" align="center" class="jumbotron" style="background-color:#A0CFEC;">
                  <div class="container"> 
                  <div class="row">
                      
@@ -59,7 +73,15 @@
                          </a>
                          <p>
                              <h5>
-                        <a href="#" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">More about this website</a>
+                        <a href="#" data-toggle="popover" 
+                            data-placement="bottom" 
+                            title="National Geographic" 
+                            data-content="National Geographic is a company dedicated in teaching the world
+                            the beauty and power of science.  Their website is filled with articles, the 
+                            latest science news, films, and photographs from professional photographers">
+                            More about this website
+                        </a>
+                        
                          </h5>
                         <script>
                         $(document).ready(function(){
@@ -69,12 +91,21 @@
                         </p>
                      </div>
                      
+                     
                      <div class="col-lg-4" class="container">
                          <a href="http://www.wolfworlds.com/" class="btn btn-default btn-md" role="button">wolfworlds.com</a>
                          <p>
                              <h5>
-                        <a href="#" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">More about this website</a>
-                         </h5>
+                        <a href="#" 
+                            data-toggle="popover" 
+                            data-placement="bottom" 
+                            title="Wolf Worlds" 
+                            data-content="Wolf Worlds in a website that specializes in wolves.  They have facts
+                            and images about wolves, and have a goal to protect and preserve them.">
+                            More about this website
+                        </a>
+                             </h5>
+                         
                         <script>
                         $(document).ready(function(){
                         $('[data-toggle="popover"]').popover();   
@@ -87,8 +118,19 @@
                      <a href="https://defenders.org/gray-wolf/basic-facts"  class="btn btn-default btn-md" role="button">Defenders: Wolves</a>
                      <p>
                              <h5>
-                        <a href="#" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">More about this website</a>
+                        <a href="#" 
+                            data-toggle="popover" 
+                            data-placement="bottom" 
+                            title="Defenders" 
+                            data-content="Defenders is a website for a company that is working
+                            to preserve wildlife and wildlands.  They inform people the importance
+                            of keeping nature safe, and encourages us to take action and help preserve
+                            our Earth for future generations.">
+                            More about this website
+                        </a>
                          </h5>
+                         
+                         
                         <script>
                         $(document).ready(function(){
                         $('[data-toggle="popover"]').popover();   
@@ -115,10 +157,24 @@
     </div> 
 </div>
 
-
+<div style="background-color:#A0CFEC;" id="section2">
+        <div>
+            <nav class="navbar navbar-default" style="background-color: lightblue;">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Leyna's Website</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://lnnguyen1.github.io/ecs81718/HTML/practice1.html">Practice 1</a></li>
+                    <li><a href="https://lnnguyen1.github.io/ecs81718/HTML/table1.html">Table 1</a></li>
+                    <li><a href="https://lnnguyen1.github.io/ecs81718/HTML/FavoriteAnimal.html">Favorite Animal</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
         
             
-        <div align="center" style="background-color:#D1EEEE;">
+        <div align="center" \>
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">By: Leyna Nguyen</button>
                 <div id="myModal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -158,7 +214,9 @@
                  </div>
              </div>
              
-             <div align="center" style="background-color:lightblue;">
+             
+             
+             <div align="center" style="background-color:lightblue;" id="section3">
                  <br>
                          <button data-toggle="collapse" data-target="#demo" class="btn btn-info btn-lg">Mythology</button>
                          <div id="demo" class="collapse">
@@ -170,12 +228,14 @@
                          </div>
                   <br>
              </div>
+             
+             
   <br>           
   
  
              
              
-            <div align="center" class="jumbotron" style="background-color:#D1EEEE;">
+            <div align="center" class="jumbotron" style="background-color:#D1EEEE;" id="section4">
                  <div class="container"> 
                  <div class="row">
                      
@@ -211,12 +271,13 @@
             </div>
             
             
-            <div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
             
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
 
           <div class="carousel-inner">
@@ -229,7 +290,11 @@
                 </div>
 
                 <div class="item">
-                    <img src="http://wolfie.library.stonybrook.edu/wp-content/uploads/2016/06/articwolf-1000x400.gif" alt="White Wolf">
+                    <img src="http://fair-travel.se/wp-content/uploads/2012/02/Skansen-wolf-1-1000x400.jpg" alt="Wolf tree">
+                </div>
+                
+                <div class="item">
+                    <img src="https://www.sundowner.nl/wp-content/uploads/shutterstock_554438812-1000x400.jpg" alt="wolf snow">
                 </div>
           </div>
 
@@ -243,5 +308,6 @@
           </a>
           
         </div>
+        
     </body>
 </html>
