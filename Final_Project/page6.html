@@ -96,9 +96,24 @@
         <br>
          <div>
              <div align="center" style="font-size:90px; font-type:Courier;">
+                  <!--
                   <font color="#76323F">
                   About Me
                   </font>
+                  -->
+                    <a data-toggle="popover" data-content="Get to know me a little better!">
+                <font color="#76323F">
+                  About Me
+                  </font>
+              </a>
+  
+
+              
+              <script>
+                $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+                });
+              </script>
                  </div>
         </div>
         <br>
